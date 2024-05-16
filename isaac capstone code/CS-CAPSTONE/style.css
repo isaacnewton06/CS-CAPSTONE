@@ -1,5 +1,13 @@
-.navbar-brand {
-    font-family: serif;
-    font-size: xx-large;
-    font-weight: 600;
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
 }
