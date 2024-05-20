@@ -7,49 +7,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <style>
+      .custom-navbar {
+        background-color: #4CAF50; /* Change this to your desired color */
+      }
+      #title {
+        color: blue;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        font-size: 2.5em;
+        font-style: italic;
+      }
+      .intro-text {
+        text-align: center;
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-size: 1.5em;
+      }
+      .text-col p {
+        text-align: center;
+        font-family: 'Verdana', sans-serif;
+        font-size: 1.2em;
+      }
+      .text-col p:first-child {
+        color: darkgreen;
+        font-weight: bold;
+      }
+      .text-col p:last-child {
+        color: darkblue;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" navbar-fixed-top>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
       <a class="navbar-brand" href="#">
-        <img src="logologo.png" width="50" height="50">
+        <img src="logologo.png" width="50" height="50" alt="Logo">
         Isaac's Capstone Project
       </a>
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="AboutIsaac.html">About Me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Research
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="InitialResearchIsaac.html">Initial Research</a></li>
-                  <li><a class="dropdown-item" href="CaseStudyIsaac.html">Case Study</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="RootCausesIsaac.html">Root Causes</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutIsaac.html">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Research
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="InitialResearchIsaac.html">Initial Research</a></li>
+                <li><a class="dropdown-item" href="CaseStudyIsaac.html">Case Study</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="RootCausesIsaac.html">Root Causes</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-      <h1 style="text-align: center;" id="title">Initial Research</h1>
-            <br>
-            <h3 style="text-align: center; color: black;">This page will have my initial research</h3>
-      <script>
-        document.getElementById("title").style.color = "blue";
-      </script>
+      </div>
+    </nav>
+    <h1 id="title">Initial Research</h1>
+    <br>
+    <h3 class="intro-text">This page will have my initial research</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col text-col">
+          <p>My name is Isaac Newton.</p>
+          <br>
+          <p>I am currently a senior at Oakland Technical High school. I like to play Fortnite because it is fun and I am really good at it. Although my favorite thing to do is to just be anywhere with my friends.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("title").style.color = "blue";
+    </script>
   </body>
 </html>
